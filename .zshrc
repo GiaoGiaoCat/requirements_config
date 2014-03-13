@@ -50,7 +50,7 @@ export UPDATE_ZSH_DAYS=30
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew bundle gem github node npm osx rails rake ruby rvm textmate sublime vi-mode)
+plugins=(git brew bundler gem github node npm osx rails rake ruby rvm textmate sublime vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
