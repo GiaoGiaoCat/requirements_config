@@ -67,7 +67,7 @@ PATH=/usr/local/bin/zsh:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:$PAT
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 bindkey -v
-bindkey -M viins md-mode
+bindkey -M viins 'jj' vi-cmd-mode
 
 # bindkey '^P' up-history
 # bindkey '^N' down-history
