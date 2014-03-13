@@ -69,6 +69,15 @@ PATH=/usr/local/bin/zsh:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:$PAT
 bindkey -v
 bindkey -M viins 'jj' vi-cmd-mode
 
+# bindkey '^r' history-incremental-search-backward
+# Search backwards and forwards with a pattern
+bindkey -M vicmd '/' history-incremental-pattern-search-backward
+bindkey -M vicmd '?' history-incremental-pattern-search-forward
+
+# set up for insert mode too
+bindkey -M viins '^R' history-incremental-pattern-search-backward
+bindkey -M viins '^F' history-incremental-pattern-search-forward
+
 # bindkey '^P' up-history
 # bindkey '^N' down-history
 # bindkey '^h' backward-delete-char
