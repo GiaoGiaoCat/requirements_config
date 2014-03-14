@@ -50,7 +50,7 @@ export UPDATE_ZSH_DAYS=30
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew bundle gem github node npm osx rails rake ruby rvm textmate sublime vi-mode)
+plugins=(git brew bundler gem github node npm osx rails rake ruby rvm textmate sublime vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -67,7 +67,16 @@ PATH=/usr/local/bin/zsh:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:$PAT
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 bindkey -v
-bindkey -M viins md-mode
+bindkey -M viins 'jj' vi-cmd-mode
+
+# bindkey '^r' history-incremental-search-backward
+# Search backwards and forwards with a pattern
+bindkey -M vicmd '/' history-incremental-pattern-search-backward
+bindkey -M vicmd '?' history-incremental-pattern-search-forward
+
+# set up for insert mode too
+bindkey -M viins '^R' history-incremental-pattern-search-backward
+bindkey -M viins '^F' history-incremental-pattern-search-forward
 
 # bindkey '^P' up-history
 # bindkey '^N' down-history
