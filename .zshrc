@@ -12,6 +12,7 @@ alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 # alias vi="vim"
 alias vim="mvim"
+alias ls="ls -w"
 
 function wiki() {
   if [[ $1 == "stop" ]] ; then
