@@ -1,10 +1,11 @@
 {
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
-	"caret_style": "solid",
-	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+	"caret_style": "phase",
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
 	"create_window_at_startup": false,
 	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
 		".DS_Store",
@@ -30,6 +31,7 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Dayle Rees Color Schemes"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
@@ -39,11 +41,11 @@
 	],
 	"scroll_past_end": true,
 	"tab_size": 2,
-	"theme": "Spacegray Eighties.sublime-theme",
+	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"vintage_ctrl_keys": true,
 	"vintage_start_in_command_mode": true,
 	"wide_caret": true,
 	"word_wrap": true
 }
-
