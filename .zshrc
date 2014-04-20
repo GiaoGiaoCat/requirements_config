@@ -89,3 +89,4 @@ bindkey -M viins '^F' history-incremental-pattern-search-forward
 # bindkey '^e' end-of-line
 # bindkey '^r' history-incremental-search-backwar
 
+export LANG=zh_CN.UTF-8
