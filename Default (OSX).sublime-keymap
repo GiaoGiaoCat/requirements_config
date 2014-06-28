@@ -1,5 +1,4 @@
 [
-  [
     { "keys": ["h"], "command": "move", "args": {"by": "characters", "forward": false}, "context":
         [ {"key": "control", "operand": "sidebar_tree"} ]
     },
@@ -52,5 +51,4 @@
       ]
     }
 
-  ]
 ]
