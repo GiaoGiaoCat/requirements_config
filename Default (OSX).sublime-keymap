@@ -14,13 +14,13 @@
     { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser"} },
     { "keys": ["ctrl+tab"], "command": "next_view" },
     { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
-    { "keys": ["j", "j"], "command": "exit_insert_mode",
-      "context":
-      [
-        { "key": "setting.command_mode", "operand": false },
-        { "key": "setting.is_widget", "operand": false }
-      ]
-    },
+    // { "keys": ["j", "j"], "command": "exit_insert_mode",
+    //   "context":
+    //   [
+    //     { "key": "setting.command_mode", "operand": false },
+    //     { "key": "setting.is_widget", "operand": false }
+    //   ]
+    // },
     { "keys": ["g", "t"], "command": "next_view",
       "context":
       [
