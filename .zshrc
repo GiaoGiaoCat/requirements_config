@@ -51,7 +51,7 @@ export UPDATE_ZSH_DAYS=30
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew bundler gem github node npm osx rails rake ruby rvm textmate sublime vi-mode)
+plugins=(git brew bundler gem github node npm osx rails rake ruby rvm textmate sublime vi-mode autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,4 +89,7 @@ bindkey -M viins '^F' history-incremental-pattern-search-forward
 # bindkey '^e' end-of-line
 # bindkey '^r' history-incremental-search-backwar
 
-export LANG=zh_CN.UTF-8
+# export LANG=zh_CN.UTF-8
+# http://stackoverflow.com/questions/4975973/gem-update-unable-to-convert-xe7-to-utf-8-in-conversion-from-ascii-8bit-to-u
+# https://github.com/helios-framework/helios/issues/22
+export LC_CTYPE=en_US.UTF-8
