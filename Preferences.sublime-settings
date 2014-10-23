@@ -1,8 +1,9 @@
 {
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
+	"caret_extra_width": 2,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+	"color_scheme": "Packages/Seti_UI/Seti.tmTheme",
 	"create_window_at_startup": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
@@ -20,28 +21,28 @@
 		".sass-cache",
 		"tmp"
 	],
-	"font_face": "Monaco",
+	"font_face": "Source Code Pro",
 	"font_options":
 	[
 		"no_bold",
 		"subpixel_antialias"
 	],
-	"font_size": 16.0,
+	"font_size": 17.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Dayle Rees Color Schemes"
+		"Vintageous"
 	],
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
 	"rulers":
 	[
 		80
 	],
 	"scroll_past_end": true,
 	"tab_size": 2,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "Seti.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_ctrl_keys": true,
