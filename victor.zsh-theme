@@ -1,19 +1,23 @@
+DALLAS_SPACE_MARK_=' - '
+DALLAS_MARK_FIRST_='%{$fg[blue]%}%B┌─'
+DALLAS_MARK_SECOND_='%{$fg[blue]%}%B└─'
 # Grab the current date (%D) and time (%T) wrapped in {}: {%D %T}
-DALLAS_CURRENT_TIME_="%{$fg[white]%}[%{$fg[yellow]%}%T%{$fg[white]%}]%{$reset_color%}"
+DALLAS_CURRENT_TIME_="%{$fg[blue]%}[%{$fg[yellow]%}%D{%Y-%m-%d %I:%M:%S}%b%{$fg[blue]%}]%{$reset_color%}"
 # Grab the current version of ruby in use (via RVM): [ruby-1.8.7]
-DALLAS_CURRENT_RUBY_="%{$fg[white]%}[%{$fg[magenta]%}\$(~/.rvm/bin/rvm-prompt i v g)%{$fg[white]%}]%{$reset_color%}"
+DALLAS_CURRENT_RUBY_="%{$fg[blue]%}[%{$fg[magenta]%}\$(~/.rvm/bin/rvm-prompt i v g)%{$fg[blue]%}]%{$reset_color%}"
 # Grab the current machine name: muscato
-DALLAS_CURRENT_MACH_="%{$fg[green]%}%m%{$fg[white]%}:%{$reset_color%}"
+DALLAS_CURRENT_MACH_="%{$fg[green]%}%m%{$fg[blue]%}]%{$reset_color%}"
 # Grab the current filepath, use shortcuts: ~/Desktop
 # Append the current git branch, if in a git repository: ~aw@master
 function git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
+  echo "${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 
-DALLAS_CURRENT_LOCA_="%{$fg[cyan]%}%~\$(git_prompt_info)%{$reset_color%}"
+DALLAS_CURRENT_LOCA_="%{$fg[blue]%}[%{$fg[cyan]%}%~%{$fg[blue]%}]%{$reset_color%}"
+DALLAS_CURRENT_GITS_="%{$fg[blue]%}[%{$fg[green]%}\$(git_prompt_info)%{$fg[blue]%}]%{$reset_color%}"
 # Grab the current username: dallas
-DALLAS_CURRENT_USER_="%{$fg[red]%}%n%{$fg[white]%}:%{$reset_color%}"
+DALLAS_CURRENT_USER_="%{$fg[blue]%}[%{$fg[magenta]%}%n%{$fg[white]%}@%{$reset_color%}"
 # Use a % for normal users and a # for privelaged (root) users.
 DALLAS_PROMPT_CHAR_="%{$fg[white]%}%(!.#.%%)%{$reset_color%}"
 # For the git prompt, use a white @ and blue text for the branch name
@@ -26,4 +30,5 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[cyan]%}✗✗✗"
 
 # Put it all together!
-PROMPT="$DALLAS_CURRENT_TIME_$DALLAS_CURRENT_RUBY_$DALLAS_CURRENT_USER_$DALLAS_CURRENT_LOCA_ $DALLAS_PROMPT_CHAR_ "
+PROMPT="$DALLAS_MARK_FIRST_$DALLAS_PREFIX_MARK_1_$DALLAS_CURRENT_TIME_$DALLAS_SPACE_MARK_$DALLAS_CURRENT_RUBY_$DALLAS_SPACE_MARK_$DALLAS_CURRENT_LOCA_
+%{$fg[blue]%}%B└─$DALLAS_CURRENT_GITS_ "
