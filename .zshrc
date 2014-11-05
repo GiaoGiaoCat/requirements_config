@@ -61,8 +61,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Add RVM to PATH for scripting. Read More:: https://coderwall.com/p/lovd-g
 # Using ZSH5 http://stackoverflow.com/questions/7117184/brew-installation-for-zsh
-PATH=/usr/local/bin/zsh:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:$PATH:$HOME/.rvm/bin:/Users/victor/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+# PATH=/usr/local/bin/zsh:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:$PATH:$HOME/.rvm/bin:/Users/victor/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 # export PATH=/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting. Read More:: https://coderwall.com/p/lovd-g
 
 # http://episko.posterous.com/brew-zsh-git-and-rvm
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
