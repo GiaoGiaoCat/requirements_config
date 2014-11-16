@@ -9,6 +9,7 @@
 
 ### ST3 Plugins
 
+* Vintageous
 * AdvancedNewFile
 * ApplySyntax
 * DocBlockr
