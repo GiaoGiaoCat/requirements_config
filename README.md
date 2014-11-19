@@ -16,6 +16,7 @@
 * GitGutter
 * Side Bar
 * PlainTasks
+* SublimeREPL (这里需要配置才能在 ST3 中运行 Ruby 具体参考我的 blog）
 
 ### ST3 Theme and Color Theme
 
