@@ -65,6 +65,8 @@ RubyGems Environment:
 
 ```
 
+注意我安装的 rvm 并设置 ruby-2.1.2@rails4 是默认启动的环境
+
 ### ST3 Theme and Color Theme
 
 * Dracula Color Scheme
