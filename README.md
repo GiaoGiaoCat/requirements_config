@@ -10,6 +10,7 @@
 ### ST3 Plugins
 
 * Vintageous
+* All AutoComplete
 * AdvancedNewFile
 * ApplySyntax
 * DocBlockr
