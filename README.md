@@ -17,6 +17,7 @@
 * GitGutter
 * Side Bar
 * PlainTasks
+* http://emmet.io/ 前端开发用
 * SublimeREPL (这里需要配置才能在 ST3 中运行 Ruby 具体参考我的 blog）
   * pry shoud be < 0.9.12 (在2014.11.14的实际安装中发现) 
   * 根据 gem env 修改个人的配置如下
@@ -80,3 +81,6 @@ RubyGems Environment:
 * http://www.getmacapps.com/ 一键安装常用免费软件
 * http://iterm2colorschemes.com/ iTerm2 theme
 * http://font.ubuntu.com/ 可以下载给 Terminal 用的 UbuntuMono 系列字体
+* https://boxen.github.com/
+* http://livereload.com 前端开发用
+* https://www.modern.ie/en-us 前端开发用
