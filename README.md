@@ -76,7 +76,7 @@ RubyGems Environment:
 * Tomorrow COlor Schemes
 * Seti UI
 
-### 网站
+### 网站和软件
 
 * http://www.getmacapps.com/ 一键安装常用免费软件
 * http://iterm2colorschemes.com/ iTerm2 theme
