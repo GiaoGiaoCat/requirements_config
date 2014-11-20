@@ -74,3 +74,9 @@ RubyGems Environment:
 * Spacegray
 * Tomorrow COlor Schemes
 * Seti UI
+
+### 网站
+
+* http://www.getmacapps.com/ 一键安装常用免费软件
+* http://iterm2colorschemes.com/ iTerm2 theme
+* http://font.ubuntu.com/ 可以下载给 Terminal 用的 UbuntuMono 系列字体
