@@ -59,6 +59,7 @@
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
+	"open_files_in_new_window": false,
 	"rulers":
 	[
 		80
@@ -68,9 +69,9 @@
 	"theme": "Seti.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_ctrl_keys": true,
-	"vintage_start_in_command_mode": true,
+	"vintage_ctrl_keys": false,
+	"vintage_start_in_command_mode": false,
+	"vintageous_use_ctrl_keys": true,
 	"wide_caret": true,
-	"word_wrap": true,
-  "open_files_in_new_window": false
+	"word_wrap": true
 }
