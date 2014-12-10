@@ -17,6 +17,7 @@
 * GitGutter
 * Side Bar
 * PlainTasks
+* DashDoc 使用快捷键 ```Ctrl + Option + h``` 在 Dash 中搜索当前选中单词
 * http://emmet.io/ 前端开发用
 * SublimeREPL (这里需要配置才能在 ST3 中运行 Ruby 具体参考我的 blog）
   * pry shoud be < 0.9.12 (在2014.11.14的实际安装中发现) 
