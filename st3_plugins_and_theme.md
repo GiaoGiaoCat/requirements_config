@@ -15,7 +15,7 @@
   * 根据 gem env 修改个人的配置如下
   
 ```bash
-└─[] gem env
+$ gem env
 RubyGems Environment:
   - RUBYGEMS VERSION: 2.4.2
   - RUBY VERSION: 2.1.2 (2014-05-08 patchlevel 95) [x86_64-darwin13.0]
@@ -50,6 +50,7 @@ RubyGems Environment:
  ```
 
 ```
+# SublimeREPL.sublime-settings
 {
   "default_extend_env": {
     "PATH": "{HOME}/.rvm/rubies/ruby-2.1.2/bin:{PATH}",
