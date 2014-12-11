@@ -79,17 +79,21 @@ bindkey -M vicmd '?' history-incremental-pattern-search-forward
 
 # set up for insert mode too
 bindkey -M viins '^R' history-incremental-pattern-search-backward
-bindkey -M viins '^F' history-incremental-pattern-search-forward
+# bindkey -M viins '^F' history-incremental-pattern-search-forward
 
-# bindkey '^P' up-history
-# bindkey '^N' down-history
-# bindkey '^h' backward-delete-char
-# bindkey '^w' backward-kill-word
-# bindkey '^f' forward-word
-# bindkey '^b' backward-word
-# bindkey '^a' beginning-of-line
-# bindkey '^e' end-of-line
-# bindkey '^r' history-incremental-search-backwar
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^h' backward-delete-char
+bindkey '^d' delete-char
+bindkey '^w' backward-kill-word
+bindkey '^u' backward-kill-line
+bindkey '^k' kill-line
+# bindkey 'Alt + f' forward-word
+# bindkey 'Alt + b' backward-word
+bindkey '^f' forward-char
+bindkey '^b' backward-char
+bindkey '^a' beginning-of-line
+bindkey '^e' end-of-line
 
 # export LANG=zh_CN.UTF-8
 # http://stackoverflow.com/questions/4975973/gem-update-unable-to-convert-xe7-to-utf-8-in-conversion-from-ascii-8bit-to-u
