@@ -68,3 +68,17 @@ RubyGems Environment:
 * Spacegray
 * Tomorrow COlor Schemes
 * Seti UI
+
+### 修改 Seti UI 的边栏颜色
+
+让边栏在被选中的情况下，当前行颜色更亮。打开 `Packages/Seti_UI/Seti.sublime-theme` 编辑如下：
+
+```
+    // Sidebar rows || selected files bg
+    {
+        "class": "tree_row",
+        "layer0.texture": null,
+        "layer0.tint": [55, 61, 86],
+        "layer0.opacity": 0
+    },
+```
