@@ -82,3 +82,9 @@ RubyGems Environment:
         "layer0.opacity": 0
     },
 ```
+
+参考的
+
+* https://github.com/kkga/spacegray/blob/master/Spacegray.sublime-theme
+* https://gist.github.com/MrDrews/5452773
+* http://sublimetext.userecho.com/topic/19274-theming-of-the-sidebar/
