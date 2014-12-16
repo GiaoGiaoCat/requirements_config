@@ -1,6 +1,7 @@
 ### ST3 Plugins
 
 * Vintageous
+* CTags
 * All AutoComplete
 * AdvancedNewFile
 * ApplySyntax
@@ -88,3 +89,18 @@ RubyGems Environment:
 * https://github.com/kkga/spacegray/blob/master/Spacegray.sublime-theme
 * https://gist.github.com/MrDrews/5452773
 * http://sublimetext.userecho.com/topic/19274-theming-of-the-sidebar/
+
+
+### Ctags 无法编译的问题
+
+1. brew install ctags
+2. st3 安装 ctags 插件
+3. 配置 ctags 插件的选项，将 ctags 的路径指向绝对路径
+
+```
+// Place your settings in the file "User/CTags.sublime-settings", which
+// overrides the settings in here.
+{
+    "command": "/usr/local/bin/ctags"
+}
+```
