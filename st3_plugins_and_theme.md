@@ -11,6 +11,10 @@
 * PlainTasks
 * DashDoc 使用快捷键 ```Ctrl + Option + h``` 在 Dash 中搜索当前选中单词
 * http://emmet.io/ 前端开发用
+* [Seeing Is Believing](https://github.com/JoshCheek/sublime-text-2-seeing-is-believing)
+  * 先安装 Seeing Is Believing 的 gem
+  * 配置 rvm 的 sublime wrapper，例如 ```rvm wrapper ruby-2.1.2@rails4 sublime```
+  * 按照 [这里](https://gist.github.com/wjp2013/ce882c9ddeba2babf984) 进行修改
 * SublimeREPL (这里需要配置才能在 ST3 中运行 Ruby 具体参考我的 blog）
   * pry shoud be < 0.9.12 (在2014.11.14的实际安装中发现) 
   * 根据 gem env 修改个人的配置如下
