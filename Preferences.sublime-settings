@@ -59,6 +59,8 @@
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
+	"margin": 2,
+	"overlay_scroll_bars": "enabled",
 	"open_files_in_new_window": false,
 	"rulers":
 	[
