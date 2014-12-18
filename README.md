@@ -12,6 +12,7 @@
 * http://www.getmacapps.com/ 一键安装常用免费软件
 * http://iterm2colorschemes.com/ iTerm2 theme
 * http://font.ubuntu.com/ 可以下载给 Terminal 用的 UbuntuMono 系列字体
+* http://www.slant.co/topics/67/~what-are-the-best-programming-fonts 选择一款合适的编程字体
 * https://boxen.github.com/
 * http://livereload.com 前端开发用
 * https://www.modern.ie/en-us 前端开发用
