@@ -3,6 +3,7 @@
 * Vintageous
 * CTags
 * All AutoComplete
+* TrailingSpaces
 * AdvancedNewFile
 * ApplySyntax
 * DocBlockr
