@@ -3,7 +3,7 @@
 " https://github.com/grigio/vim-sublime
 "==========================================
 " Author: Victor Wang
-" Version: 0.1
+" Version: 0.7
 " Email: wjp2013@gmail.com
 " BlogPost: http://wjp2013.gmail.com
 " Last_modify: 2014-12-01
@@ -16,10 +16,9 @@
 "       -> HotKey Settings  自定义快捷键
 "       -> FileType Settings  针对文件类型的设置
 "       -> Theme Settings  主题设置
-"
 "       -> 插件配置和具体设置在vimrc.bundles中
 "==========================================
-"  
+"
 "==========================================
 " Initial Plugin 加载插件
 "==========================================
@@ -28,20 +27,13 @@
 let mapleader = ','
 let g:mapleader = ','
 
-" 不兼容VI键盘，使用vim键盘
-set nocompatible
-
-" 设置开启语法高亮
-syntax on
-
 " install Vundle bundles
-" if filereadable(expand("~/.vimrc.bundles"))
-"   source ~/.vimrc.bundles
-" endif
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
 
 " ensure ftdetect et al work by including this after the Vundle stuff
 filetype plugin indent on
-
 "==========================================
 " General Settings 基础设置
 "==========================================
@@ -80,9 +72,6 @@ set noswapfile
 "  set undodir=/tmp/vimundo/
 "endif
 
-" tab键的自动完成现在会忽略这些
-set wildignore=*.swp,*.bak,*.pyc,*.class,.svn
-
 " 突出显示当前行等
 " set cursorcolumn
 set cursorline
@@ -92,7 +81,7 @@ set iskeyword+=_,$,@,%,#,-
 
 " 设置 退出vim后，内容显示在终端屏幕, 可以用于查看和复制
 " 好处：误删什么的，如果以前屏幕打开，可以找回
-" set t_ti= t_te=
+set t_ti= t_te=
 
 " 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
 set mouse=a
@@ -124,6 +113,21 @@ set whichwrap+=<,>,h,l"
 "==========================================
 " Display Settings 展示/排版等界面格式设置
 "==========================================
+" 设置开启语法高亮
+syntax on
+
+" highlight the 80th column
+" set colorcolumn=80
+" highlight ColorColumn ctermbg=black guibg=black
+
+" In Vim >= 7.3, also highlight columns 120+
+if exists('+colorcolumn')
+  " (I picked 120-320 because you have to provide an upper bound and 500 seems to be enough.")
+  let &colorcolumn="80,".join(range(120,500),",")
+else
+  " fallback for Vim < v7.3
+  autocmd BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+',  -1)
+endif
 
 " 显示当前的行号列号：
 set ruler
@@ -181,7 +185,6 @@ set shiftround    " 缩进时，取整 use multiple of shiftwidth when indenting
 
 " A buffer becomes hidden when it is abandoned
 set hidden
-set wildmode=list:longest
 set ttyfast
 
 " " 00x增减数字时使用十进制
@@ -232,12 +235,24 @@ autocmd! bufwritepost .vimrc source % " vimrc文件修改之后自动加载: lin
 set completeopt=longest,menu
 " 增强模式中的命令行自动完成操作
 set wildmenu
-" Ignore compiled files
-set wildignore=*.o,*~,*.pyc,*.class
+" 命令行下按tab键自动完成
+set wildmode=list:longest,full
+" tab键的自动完成现在会忽略这些
+set wildignore=*.swp,*.bak,*.pyc,*.class,.svn
+
 " 离开插入模式后自动关闭预览窗口
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 "回车即选中当前项
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
+
+" Python 文件的一般设置，比如不要 tab 等
+autocmd FileType python set tabstop=4 shiftwidth=4 expandtab ai
+autocmd FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
+" automatically strip trailing spaces on save
+autocmd BufWritePre * :%s/\s\+$//e
+" autocmd BufWritePre *.rb :%s/\s\+$//e
+" Mac OS X clipboard sharing
+set clipboard=unnamed
 
 "==========================================
 " HotKey Settings  自定义快捷键设置
@@ -258,6 +273,7 @@ nnoremap gj j
 " F4 换行开关
 " F5 粘贴模式paste_mode开关,用于有格式的代码粘贴
 " F6 语法开关，关闭语法可以加快大文件的展示
+" F8 Tagbar 开关
 
 " I can type :help on my own, thanks.  Protect your fat fingers from the evils
 " of <F1>
@@ -278,12 +294,14 @@ nnoremap <F2> :call HideNumber()<CR>
 nnoremap <F3> :set list! list?<CR>
 nnoremap <F4> :set wrap! wrap?<CR>
 "set paste
-set pastetoggle=<F5> " when in insert mode, press <F5> to go to paste mode, where you can paste mass data that won't be autoindented. 
+set pastetoggle=<F5> " when in insert mode, press <F5> to go to paste mode, where you can paste mass data that won't be autoindented.
 " disbale paste mode when leaving insert mode
 au InsertLeave * set nopaste
 nnoremap <F6> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
+nmap <F8> :TagbarToggle<CR>
 
 " Smart way to move between windows 分屏窗口移动
+" ctrl + j/k/h/l   进行上下左右窗口跳转,不需要ctrl+w+jkhl
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
@@ -303,16 +321,12 @@ cnoremap <C-k> <t_ku>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
-" 命令行下按tab键自动完成
-set wildmode=list:full
-set wildmenu
-
 " 搜索相关
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 " 进入搜索Use sane regexes"
-"nnoremap / /\v
-"vnoremap / /\v
+nnoremap / /\v
+vnoremap / /\v
 
 " Keep search pattern at the center of the screen."
 nnoremap <silent> n nzz
@@ -336,3 +350,31 @@ imap <F9> <Esc>:up<cr>
 
 " Remap Your ESCAPE Key in Vim
 inoremap jj <ESC>
+
+"==========================================
+" Theme Settings  主题设置
+"==========================================
+let g:solarized_termcolors=256
+" colorscheme solarized
+" colorscheme seti
+colorscheme Tomorrow-Night-Bright
+" colorscheme Tomorrow-Night
+" set background=dark
+" colorscheme molokai
+set t_Co=256 " 256 colors in terminal"
+
+"设置标记一列的背景颜色和数字一行颜色一致
+hi! link SignColumn   LineNr
+hi! link ShowMarksHLl DiffAdd
+hi! link ShowMarksHLu DiffChange
+
+" for error highlight，防止错误整行标红导致看不清
+highlight clear SpellBad
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
+highlight clear SpellCap
+highlight SpellCap term=underline cterm=underline
+highlight clear SpellRare
+highlight SpellRare term=underline cterm=underline
+highlight clear SpellLocal
+highlight SpellLocal term=underline cterm=underline
+
