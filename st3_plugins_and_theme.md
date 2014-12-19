@@ -4,7 +4,6 @@
 * [VintageLines](https://github.com/metaphox/) 这个 fork 的项目比官方源的更好，手动下载解压到 ```~/Library/Application\ Support/Sublime\ Text\ 3/Packages``` 即可
 * CTags
 * All AutoComplete
-* TrailingSpaces
 * AdvancedNewFile
 * ApplySyntax
 * DocBlockr
