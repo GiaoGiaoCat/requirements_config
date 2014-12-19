@@ -5,7 +5,9 @@
 * ```Preferences.sublime-settings``` Sublime Text 的自定义配置
 * ```Default (OSX).sublime-keymap``` Sublime Text 的自定义快捷键
 * ```tasks-base16-bright-dark.hidden-tmTheme``` Sublime Text 2 插件：PlainTasks 的配色方案
+* ```st3_plugins_and_theme.md``` Sublime Text 相关的插件配置
 * ```.vimrc``` vim 配置
+* ```vimrc.bundles``` vim 插件配置
 
 ### 网站和软件
 
