@@ -1,3 +1,7 @@
+### About VIM mode
+
+* [Make Sublime Text 2 More like Vim: Wrap Code, Go To Last Edit, Jump Back, and More](http://andrewbrookins.com/tech/make-sublime-text-2-more-like-vim-wrap-code-goto-last-edit-and-more/)
+
 ### ST3 Plugins
 
 * Vintageous
