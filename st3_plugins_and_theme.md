@@ -1,6 +1,7 @@
 ### About VIM mode
 
-* [Make Sublime Text 2 More like Vim: Wrap Code, Go To Last Edit, Jump Back, and More](http://andrewbrookins.com/tech/make-sublime-text-2-more-like-vim-wrap-code-goto-last-edit-and-more/)
+* [Vintageous](https://github.com/guillermooo/Vintageous) 试用了一年之后我还是放弃了这个插件，虽然更新快，但是选择一行的时候会自动选上最后的换行符
+* [Sublime Text 3 (OSX) Cheat Sheet](http://www.cheatography.com/martinprins/cheat-sheets/sublime-text-3-osx/)
 
 ### ST3 Plugins
 
