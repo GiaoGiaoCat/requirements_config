@@ -102,6 +102,35 @@ RubyGems Environment:
 * https://gist.github.com/MrDrews/5452773
 * http://sublimetext.userecho.com/topic/19274-theming-of-the-sidebar/
 
+### ApplySyntax support html.erb files as Rails HTML
+
+```
+// ApplySyntax.sublime-settings
+{
+    // If you want exceptions reraised so you can see them in the console, change this to true.
+    "reraise_exceptions": false,
+
+    // If you want to have a syntax applied when new files are created, set new_file_syntax to the name of the syntax to use.
+    // The format is exactly the same as "name" in the rules below. For example, if you want to have a new file use
+    // JavaScript syntax, set new_file_syntax to 'JavaScript'.
+    "new_file_syntax": false,
+
+    // Put your custom syntax rules here:
+    "syntaxes": [
+        {
+            // Seems must other will make .html.erb as HTML files
+            "name": "Rails/HTML (Rails)",
+            "rules": [
+                {"file_name": ".*\\.html\\.erb$"}
+            ]
+        }
+    ]
+}
+```
+
+参考的
+
+* https://github.com/facelessuser/ApplySyntax/blob/master/ApplySyntax.sublime-settings
 
 ### Ctags 无法编译的问题
 
