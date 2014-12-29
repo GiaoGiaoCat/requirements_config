@@ -33,20 +33,6 @@
           { "key": "setting.is_widget", "operand": false }
       ]
     },
-
-    { "keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 40.0},
-      "context":
-      [
-        { "key": "setting.command_mode" }
-      ]
-    },
-
-    { "keys": ["ctrl+d"], "command": "scroll_lines", "args": {"amount": -40.0},
-      "context":
-      [
-        {"key": "setting.command_mode"}
-      ]
-    },
     { "keys": ["ctrl+h"], "command": "focus_side_bar", "context": [{ "key": "setting.command_mode" }] },
     { "keys": ["ctrl+l"], "command": "focus_group", "args": { "group": 0 } },
 ]
