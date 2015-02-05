@@ -145,3 +145,7 @@ RubyGems Environment:
     "command": "/usr/local/bin/ctags"
 }
 ```
+
+### 相关文章
+
+* [Sublime Text：学习资源篇](http://www.jianshu.com/p/d1b9a64e2e37)
