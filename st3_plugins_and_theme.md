@@ -18,6 +18,7 @@
 * Side Bar
 * PlainTasks
 * DashDoc 使用快捷键 ```Ctrl + Option + h``` 在 Dash 中搜索当前选中单词
+* [SublimeLinter-rubocop](https://github.com/SublimeLinter/SublimeLinter-rubocop) Ruby 语法检查器
 * http://emmet.io/ 前端开发用
 * [Seeing Is Believing](https://github.com/JoshCheek/sublime-text-2-seeing-is-believing)
   * 先安装 Seeing Is Believing 的 gem
@@ -149,3 +150,4 @@ RubyGems Environment:
 ### 相关文章
 
 * [Sublime Text：学习资源篇](http://www.jianshu.com/p/d1b9a64e2e37)
+* [Setting up Sublime Text 3 for Rails Development](https://mattbrictson.com/sublime-text-3-recommendations)
