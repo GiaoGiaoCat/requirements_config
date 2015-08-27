@@ -82,6 +82,7 @@ RubyGems Environment:
 * Spacegray
 * Tomorrow COlor Schemes
 * Seti UI
+* [Material](https://github.com/equinusocio/material-theme) 最近喜欢这款 Theme 了
 
 ### 修改 Seti UI 的边栏颜色
 
