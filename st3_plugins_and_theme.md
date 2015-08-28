@@ -17,6 +17,7 @@
 * GitGutter
 * Side Bar
 * PlainTasks
+* [Project-Manager](https://github.com/randy3k/Project-Manager) 替换内置的 Project 管理
 * DashDoc 使用快捷键 ```Ctrl + Option + h``` 在 Dash 中搜索当前选中单词
 * [SublimeLinter-rubocop](https://github.com/SublimeLinter/SublimeLinter-rubocop) Ruby 语法检查器
 * http://emmet.io/ 前端开发用
