@@ -1,11 +1,13 @@
 {
+	"always_show_minimap_viewport": true,
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_delay": 5,
 	"auto_complete_selector": "source, text",
 	"bold_folder_labels": true,
 	"caret_extra_width": 2,
 	"caret_style": "phase",
-	"color_scheme": "Packages/3024 Color Scheme/3024 Night.tmTheme",
+	"close_windows_when_empty": true,
+	"color_scheme": "Packages/User/base16-eighties.dark (SL).tmTheme",
 	"create_window_at_startup": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
@@ -55,7 +57,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Markdown"
 	],
+	"index_files": true,
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"margin": 2,
