@@ -79,5 +79,6 @@
 	"vintage_ctrl_keys": true,
 	"vintage_start_in_command_mode": true,
 	"wide_caret": true,
-	"word_wrap": true
+	"word_wrap": true,
+	"show_open_files": true,
 }
