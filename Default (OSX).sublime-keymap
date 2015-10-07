@@ -35,4 +35,8 @@
     },
     { "keys": ["ctrl+h"], "command": "focus_side_bar", "context": [{ "key": "setting.command_mode" }] },
     { "keys": ["ctrl+l"], "command": "focus_group", "args": { "group": 0 } },
+    {
+      "keys": ["super+ctrl+o"],
+      "command": "project_manager_list", "args": {"action": "new"}
+    }
 ]
