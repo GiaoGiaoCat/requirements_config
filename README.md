@@ -12,7 +12,7 @@
 
 ## Ruby 开发环境配置
 
-解决 **Gemfile source 'https://rubygems.org' connection reset in china**
+解决 `Gemfile source 'https://rubygems.org' connection reset in china`
 
 `bundle config mirror.https://rubygems.org https://ruby.taobao.org`
 
