@@ -85,6 +85,13 @@ RubyGems Environment:
 * Seti UI
 * [Material](https://github.com/equinusocio/material-theme) 最近喜欢这款 Theme 了
 
+ 
+### Enable key repeat in Apple Lion for Sublime Text in Vim mode
+
+```defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false```
+
+参考 https://gist.github.com/kconragan/2510186
+
 ### 修改 Seti UI 的边栏颜色
 
 让边栏在被选中的情况下，当前行颜色更亮。打开 `Packages/Seti_UI/Seti.sublime-theme` 编辑如下：
