@@ -9,12 +9,17 @@
 * ```.vimrc``` vim 配置
 * ```vimrc.bundles``` vim 插件配置
 
+## 新机器环境配置
+
+* http://sourabhbajaj.com/mac-setup/index.html
+* https://github.com/donnemartin/dev-setup
+* https://github.com/nicolashery/mac-dev-setup
 
 ## Ruby 开发环境配置
 
 解决 `Gemfile source 'https://rubygems.org' connection reset in china`
 
-`bundle config mirror.https://rubygems.org https://ruby.taobao.org`
+`bundle config mirror.https://rubygems.org https://gems.ruby-china.org`
 
 ### 网站和软件
 
