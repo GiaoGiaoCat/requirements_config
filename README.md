@@ -15,6 +15,10 @@
 * https://github.com/donnemartin/dev-setup
 * https://github.com/nicolashery/mac-dev-setup
 
+## 其它配置 
+
+* [打开 Safari 开发调试菜单](http://sspai.com/33420)
+
 ## Ruby 开发环境配置
 
 解决 `Gemfile source 'https://rubygems.org' connection reset in china`
