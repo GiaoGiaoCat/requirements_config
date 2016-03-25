@@ -18,6 +18,7 @@
 ## 其它配置 
 
 * [打开 Safari 开发调试菜单](http://sspai.com/33420)
+* [安装 Brew Services](https://github.com/Homebrew/homebrew-services)
 
 ## Ruby 开发环境配置
 
