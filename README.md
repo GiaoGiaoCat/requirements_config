@@ -19,6 +19,7 @@
 
 * [打开 Safari 开发调试菜单](http://sspai.com/33420)
 * [安装 Brew Services](https://github.com/Homebrew/homebrew-services)
+* [iTerm2 Theme](http://iterm2colorschemes.com/) 選擇 Afterglow
 
 ## Ruby 开发环境配置
 
