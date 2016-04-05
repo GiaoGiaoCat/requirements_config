@@ -27,6 +27,10 @@
 
 `bundle config mirror.https://rubygems.org https://gems.ruby-china.org`
 
+## 如何从 G 家.com.hk 永久跳转到.com
+
+访问一次 `https://google.com/ncr` 之后只要不清理 cookies 就没问题了。Not Change Region 的意思。
+
 ### 网站和软件
 
 * http://www.getmacapps.com/ 一键安装常用免费软件
