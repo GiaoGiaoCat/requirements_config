@@ -15,7 +15,7 @@
 * https://github.com/donnemartin/dev-setup
 * https://github.com/nicolashery/mac-dev-setup
 
-## 其它配置 
+## 其它配置
 
 * [打开 Safari 开发调试菜单](http://sspai.com/33420)
 * [安装 Brew Services](https://github.com/Homebrew/homebrew-services)
@@ -38,6 +38,6 @@
 * http://colorsublime.com/ Sublime Text theme
 * http://font.ubuntu.com/ 可以下载给 Terminal 用的 UbuntuMono 系列字体
 * http://www.slant.co/topics/67/~what-are-the-best-programming-fonts 选择一款合适的编程字体
-* https://boxen.github.com/
+* https://github.com/boxen/our-boxen
 * http://livereload.com 前端开发用
 * https://www.modern.ie/en-us 前端开发用
