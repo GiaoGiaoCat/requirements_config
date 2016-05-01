@@ -21,6 +21,7 @@
 * [安装 Brew Services](https://github.com/Homebrew/homebrew-services)
 * [iTerm2 Theme](http://iterm2colorschemes.com/) 選擇 Afterglow
 * [Ctag](http://www.gmarik.info/blog/2010/ctags-on-OSX/)
+* [trash](https://github.com/sindresorhus/trash)
 * Vim `brew install vim --with-lua`
 
 ## Ruby 开发环境配置
