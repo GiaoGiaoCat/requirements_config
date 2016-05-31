@@ -23,6 +23,7 @@
 * [Ctag](http://www.gmarik.info/blog/2010/ctags-on-OSX/)
 * [trash](https://github.com/sindresorhus/trash)
 * Vim `brew install vim --with-lua`
+* http://hisham.hm/htop/
 
 ## Ruby 开发环境配置
 
