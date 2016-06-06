@@ -25,6 +25,13 @@
 * Vim `brew install vim --with-lua`
 * http://hisham.hm/htop/
 * [翻墙什么的](https://github.com/nightire/dotfiles)
+ 
+## brew 相关
+
+* `brew tap caskroom/versions` cask 安装软件
+* `brew tap caskroom/fonts` 安装字体
+* `brew tap homebrew/services` 管理启动项
+
 
 ## Ruby 开发环境配置
 
