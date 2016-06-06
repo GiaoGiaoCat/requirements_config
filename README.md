@@ -24,6 +24,7 @@
 * [trash](https://github.com/sindresorhus/trash)
 * Vim `brew install vim --with-lua`
 * http://hisham.hm/htop/
+* [翻墙什么的](https://github.com/nightire/dotfiles)
 
 ## Ruby 开发环境配置
 
