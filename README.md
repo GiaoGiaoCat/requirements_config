@@ -25,6 +25,7 @@
 * Vim `brew install vim --with-lua`
 * http://hisham.hm/htop/
 * [翻墙什么的](https://github.com/nightire/dotfiles)
+* [Mac CLI](https://github.com/guarinogabriel/Mac-CLI)
  
 ## brew 相关
 
