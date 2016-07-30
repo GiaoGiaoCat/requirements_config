@@ -32,6 +32,9 @@
 * `brew tap caskroom/fonts` 安装字体
 * `brew tap homebrew/services` 管理启动项
 
+## Node 工具
+
+* `npm install -g tldr` A collection of simplified and community-driven man pages.
 
 ## Ruby 开发环境配置
 
