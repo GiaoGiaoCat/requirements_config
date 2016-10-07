@@ -33,6 +33,11 @@
 * `brew tap caskroom/fonts` 安装字体
 * `brew tap homebrew/services` 管理启动项
 
+## zsh & oh my zsh 相关
+
+* [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
 ## Node 工具
 
 * `npm install -g tldr` A collection of simplified and community-driven man pages.
